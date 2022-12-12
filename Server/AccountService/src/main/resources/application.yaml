@@ -1,0 +1,6 @@
+resilience4j:
+  retry:
+    instances:
+      findOneAccount:
+        max-retry-attempts: 10 #số lần gọi lại
+        waitDuration: 3s #gọi lại trong 10s chương trình kia bị lỗi
